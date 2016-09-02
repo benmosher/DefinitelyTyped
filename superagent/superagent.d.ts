@@ -8,7 +8,7 @@
 declare module "superagent" {
   import stream = require('stream');
 
-  type CallbackHandler = (err: any, res: request.Response) => void;
+  type CallbackHandler = (err: any, res: request.Response | undefined) => void;
 
   var request: request.SuperAgentStatic;
 
